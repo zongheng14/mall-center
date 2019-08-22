@@ -1,0 +1,451 @@
+2019-08-22 15:31:22 -Starting MallUserApplication on DESKTOP-HMR2IQT with PID 20664 (D:\JavaInstall\IdeaProjects3\mall-center\mall-user\target\classes started by ZX-1401-0093 in D:\JavaInstall\IdeaProjects3\mall-center)
+2019-08-22 15:31:22 -No active profile set, falling back to default profiles: default
+2019-08-22 15:31:22 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2438dcd: startup date [Thu Aug 22 15:31:22 CST 2019]; root of context hierarchy
+2019-08-22 15:31:22 -HV000001: Hibernate Validator 5.3.6.Final
+2019-08-22 15:31:24 -No MyBatis mapper was found in '[com.center.user]' package. Please check your configuration.
+2019-08-22 15:31:24 -No MyBatis mapper was found in '[com.center.user]' package. Please check your configuration.
+2019-08-22 15:31:24 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-08-22 15:31:25 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2611bd2a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 15:31:26 -Tomcat initialized with port(s): 2001 (http)
+2019-08-22 15:31:26 -Initializing ProtocolHandler ["http-nio-2001"]
+2019-08-22 15:31:26 -Starting service [Tomcat]
+2019-08-22 15:31:26 -Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-08-22 15:31:26 -Initializing Spring embedded WebApplicationContext
+2019-08-22 15:31:26 -Root WebApplicationContext: initialization completed in 4054 ms
+2019-08-22 15:31:26 -Mapping servlet: 'dispatcherServlet' to [/]
+2019-08-22 15:31:26 -Mapping filter: 'metricsFilter' to: [/*]
+2019-08-22 15:31:26 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-22 15:31:26 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-22 15:31:26 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-22 15:31:26 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-22 15:31:26 -Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2019-08-22 15:31:26 -Mapping filter: 'applicationContextIdFilter' to: [/*]
+2019-08-22 15:31:27 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2438dcd: startup date [Thu Aug 22 15:31:22 CST 2019]; root of context hierarchy
+2019-08-22 15:31:27 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-22 15:31:27 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-22 15:31:27 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-22 15:31:27 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-22 15:31:28 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-22 15:31:28 -{dataSource-1} inited
+2019-08-22 15:31:30 -Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:31:30 -Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2019-08-22 15:31:30 -Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:31:30 -Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2019-08-22 15:31:30 -Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2019-08-22 15:31:30 -Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2019-08-22 15:31:30 -Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:31:30 -Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2019-08-22 15:31:30 -Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:31:30 -Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2019-08-22 15:31:30 -Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:31:30 -Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2019-08-22 15:31:30 -Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:31:30 -Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:31:30 -Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:31:30 -Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:31:30 -Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:31:30 -Registering beans for JMX exposure on startup
+2019-08-22 15:31:30 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-08-22 15:31:30 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-08-22 15:31:30 -Registering beans for JMX exposure on startup
+2019-08-22 15:31:30 -Starting beans in phase 0
+2019-08-22 15:31:30 -Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2019-08-22 15:31:30 -Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2019-08-22 15:31:30 -Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2019-08-22 15:31:30 -Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2019-08-22 15:31:30 -Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2019-08-22 15:31:30 -Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2019-08-22 15:31:30 -Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2019-08-22 15:31:30 -Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2019-08-22 15:31:30 -Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2019-08-22 15:31:31 -Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2019-08-22 15:31:31 -Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2019-08-22 15:31:31 -Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2019-08-22 15:31:31 -Starting ProtocolHandler ["http-nio-2001"]
+2019-08-22 15:31:31 -Using a shared selector for servlet write/read
+2019-08-22 15:31:31 -Tomcat started on port(s): 2001 (http)
+2019-08-22 15:31:31 -Started MallUserApplication in 10.437 seconds (JVM running for 12.19)
+2019-08-22 15:56:31 -Starting MallUserApplication on DESKTOP-HMR2IQT with PID 30464 (D:\JavaInstall\IdeaProjects3\mall-center\mall-user\target\classes started by ZX-1401-0093 in D:\JavaInstall\IdeaProjects3\mall-center)
+2019-08-22 15:56:31 -No active profile set, falling back to default profiles: default
+2019-08-22 15:56:31 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@78b66d36: startup date [Thu Aug 22 15:56:31 CST 2019]; root of context hierarchy
+2019-08-22 15:56:32 -HV000001: Hibernate Validator 5.3.6.Final
+2019-08-22 15:56:33 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-08-22 15:56:34 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$35b352f1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 15:56:35 -Tomcat initialized with port(s): 2001 (http)
+2019-08-22 15:56:35 -Initializing ProtocolHandler ["http-nio-2001"]
+2019-08-22 15:56:35 -Starting service [Tomcat]
+2019-08-22 15:56:35 -Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-08-22 15:56:35 -Initializing Spring embedded WebApplicationContext
+2019-08-22 15:56:35 -Root WebApplicationContext: initialization completed in 3968 ms
+2019-08-22 15:56:35 -Mapping servlet: 'dispatcherServlet' to [/]
+2019-08-22 15:56:35 -Mapping filter: 'metricsFilter' to: [/*]
+2019-08-22 15:56:35 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-22 15:56:35 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-22 15:56:35 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-22 15:56:35 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-22 15:56:35 -Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2019-08-22 15:56:35 -Mapping filter: 'applicationContextIdFilter' to: [/*]
+2019-08-22 15:56:36 -{dataSource-1} inited
+2019-08-22 15:56:37 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@78b66d36: startup date [Thu Aug 22 15:56:31 CST 2019]; root of context hierarchy
+2019-08-22 15:56:37 -Mapped "{[/personinfo/index]}" onto public java.lang.String com.center.user.controller.PersonInfoController.index()
+2019-08-22 15:56:37 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-22 15:56:37 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-22 15:56:37 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-22 15:56:37 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-22 15:56:38 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-22 15:56:38 -Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:56:38 -Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2019-08-22 15:56:38 -Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2019-08-22 15:56:38 -Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2019-08-22 15:56:38 -Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:56:38 -Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:56:38 -Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:56:38 -Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2019-08-22 15:56:38 -Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:56:38 -Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:56:38 -Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:56:38 -Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2019-08-22 15:56:38 -Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:56:38 -Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2019-08-22 15:56:38 -Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:56:38 -Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2019-08-22 15:56:38 -Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:56:39 -Registering beans for JMX exposure on startup
+2019-08-22 15:56:39 -Bean with name 'firstDataSource' has been autodetected for JMX exposure
+2019-08-22 15:56:39 -Located MBean 'firstDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=firstDataSource,type=DruidDataSource]
+2019-08-22 15:56:39 -Registering beans for JMX exposure on startup
+2019-08-22 15:56:39 -Starting beans in phase 0
+2019-08-22 15:56:39 -Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2019-08-22 15:56:39 -Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2019-08-22 15:56:39 -Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2019-08-22 15:56:39 -Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2019-08-22 15:56:39 -Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2019-08-22 15:56:39 -Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2019-08-22 15:56:39 -Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2019-08-22 15:56:39 -Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2019-08-22 15:56:39 -Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2019-08-22 15:56:39 -Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2019-08-22 15:56:39 -Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2019-08-22 15:56:39 -Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2019-08-22 15:56:39 -Starting ProtocolHandler ["http-nio-2001"]
+2019-08-22 15:56:39 -Failed to start connector [Connector[HTTP/1.1-2001]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-2001]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:265)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:208)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.center.user.MallUserApplication.main(MallUserApplication.java:17)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 14 common frames omitted
+2019-08-22 15:56:39 -Pausing ProtocolHandler ["http-nio-2001"]
+2019-08-22 15:56:39 -Stopping service [Tomcat]
+2019-08-22 15:56:39 -The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-08-22 15:56:39 -Stopping ProtocolHandler ["http-nio-2001"]
+2019-08-22 15:56:39 -Destroying ProtocolHandler ["http-nio-2001"]
+2019-08-22 15:56:39 -
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-08-22 15:56:39 -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 2001 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 2001, or configure this application to listen on another port.
+
+2019-08-22 15:56:39 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@78b66d36: startup date [Thu Aug 22 15:56:31 CST 2019]; root of context hierarchy
+2019-08-22 15:56:39 -Stopping beans in phase 0
+2019-08-22 15:56:39 -Unregistering JMX-exposed beans on shutdown
+2019-08-22 15:56:39 -Unregistering JMX-exposed beans
+2019-08-22 15:56:39 -Unregistering JMX-exposed beans on shutdown
+2019-08-22 15:56:39 -Unregistering JMX-exposed beans
+2019-08-22 15:56:39 -{dataSource-1} closed
+2019-08-22 15:56:52 -Starting MallUserApplication on DESKTOP-HMR2IQT with PID 1848 (D:\JavaInstall\IdeaProjects3\mall-center\mall-user\target\classes started by ZX-1401-0093 in D:\JavaInstall\IdeaProjects3\mall-center)
+2019-08-22 15:56:52 -No active profile set, falling back to default profiles: default
+2019-08-22 15:56:52 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5167f57d: startup date [Thu Aug 22 15:56:52 CST 2019]; root of context hierarchy
+2019-08-22 15:56:53 -HV000001: Hibernate Validator 5.3.6.Final
+2019-08-22 15:56:54 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-08-22 15:56:55 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e4626582] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 15:56:56 -Tomcat initialized with port(s): 2001 (http)
+2019-08-22 15:56:56 -Initializing ProtocolHandler ["http-nio-2001"]
+2019-08-22 15:56:56 -Starting service [Tomcat]
+2019-08-22 15:56:56 -Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-08-22 15:56:56 -Initializing Spring embedded WebApplicationContext
+2019-08-22 15:56:56 -Root WebApplicationContext: initialization completed in 4177 ms
+2019-08-22 15:56:57 -Mapping servlet: 'dispatcherServlet' to [/]
+2019-08-22 15:56:57 -Mapping filter: 'metricsFilter' to: [/*]
+2019-08-22 15:56:57 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-22 15:56:57 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-22 15:56:57 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-22 15:56:57 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-22 15:56:57 -Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2019-08-22 15:56:57 -Mapping filter: 'applicationContextIdFilter' to: [/*]
+2019-08-22 15:56:58 -{dataSource-1} inited
+2019-08-22 15:56:59 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5167f57d: startup date [Thu Aug 22 15:56:52 CST 2019]; root of context hierarchy
+2019-08-22 15:56:59 -Mapped "{[/personinfo/index]}" onto public java.lang.String com.center.user.controller.PersonInfoController.index()
+2019-08-22 15:56:59 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-22 15:56:59 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-22 15:56:59 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-22 15:56:59 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-22 15:56:59 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-22 15:57:00 -Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2019-08-22 15:57:00 -Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2019-08-22 15:57:00 -Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:57:00 -Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:57:00 -Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2019-08-22 15:57:00 -Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:57:00 -Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:57:00 -Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2019-08-22 15:57:00 -Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2019-08-22 15:57:00 -Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:57:00 -Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:57:00 -Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:57:00 -Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2019-08-22 15:57:00 -Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2019-08-22 15:57:00 -Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:57:00 -Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:57:00 -Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:57:01 -Registering beans for JMX exposure on startup
+2019-08-22 15:57:01 -Bean with name 'firstDataSource' has been autodetected for JMX exposure
+2019-08-22 15:57:01 -Located MBean 'firstDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=firstDataSource,type=DruidDataSource]
+2019-08-22 15:57:01 -Registering beans for JMX exposure on startup
+2019-08-22 15:57:01 -Starting beans in phase 0
+2019-08-22 15:57:01 -Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2019-08-22 15:57:01 -Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2019-08-22 15:57:01 -Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2019-08-22 15:57:01 -Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2019-08-22 15:57:01 -Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2019-08-22 15:57:01 -Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2019-08-22 15:57:01 -Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2019-08-22 15:57:01 -Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2019-08-22 15:57:01 -Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2019-08-22 15:57:01 -Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2019-08-22 15:57:01 -Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2019-08-22 15:57:01 -Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2019-08-22 15:57:01 -Starting ProtocolHandler ["http-nio-2001"]
+2019-08-22 15:57:01 -Failed to start connector [Connector[HTTP/1.1-2001]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-2001]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:265)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:208)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.center.user.MallUserApplication.main(MallUserApplication.java:17)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 14 common frames omitted
+2019-08-22 15:57:01 -Pausing ProtocolHandler ["http-nio-2001"]
+2019-08-22 15:57:01 -Stopping service [Tomcat]
+2019-08-22 15:57:01 -The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-08-22 15:57:01 -Stopping ProtocolHandler ["http-nio-2001"]
+2019-08-22 15:57:01 -Destroying ProtocolHandler ["http-nio-2001"]
+2019-08-22 15:57:01 -
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-08-22 15:57:01 -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 2001 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 2001, or configure this application to listen on another port.
+
+2019-08-22 15:57:01 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5167f57d: startup date [Thu Aug 22 15:56:52 CST 2019]; root of context hierarchy
+2019-08-22 15:57:01 -Stopping beans in phase 0
+2019-08-22 15:57:01 -Unregistering JMX-exposed beans on shutdown
+2019-08-22 15:57:01 -Unregistering JMX-exposed beans
+2019-08-22 15:57:01 -Unregistering JMX-exposed beans on shutdown
+2019-08-22 15:57:01 -Unregistering JMX-exposed beans
+2019-08-22 15:57:01 -{dataSource-1} closed
+2019-08-22 15:57:18 -Starting MallUserApplication on DESKTOP-HMR2IQT with PID 13856 (D:\JavaInstall\IdeaProjects3\mall-center\mall-user\target\classes started by ZX-1401-0093 in D:\JavaInstall\IdeaProjects3\mall-center)
+2019-08-22 15:57:18 -No active profile set, falling back to default profiles: default
+2019-08-22 15:57:18 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5167f57d: startup date [Thu Aug 22 15:57:18 CST 2019]; root of context hierarchy
+2019-08-22 15:57:19 -HV000001: Hibernate Validator 5.3.6.Final
+2019-08-22 15:57:20 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-08-22 15:57:21 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a9acff80] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 15:57:22 -Tomcat initialized with port(s): 2001 (http)
+2019-08-22 15:57:22 -Initializing ProtocolHandler ["http-nio-2001"]
+2019-08-22 15:57:22 -Starting service [Tomcat]
+2019-08-22 15:57:22 -Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-08-22 15:57:22 -Initializing Spring embedded WebApplicationContext
+2019-08-22 15:57:22 -Root WebApplicationContext: initialization completed in 4434 ms
+2019-08-22 15:57:23 -Mapping servlet: 'dispatcherServlet' to [/]
+2019-08-22 15:57:23 -Mapping filter: 'metricsFilter' to: [/*]
+2019-08-22 15:57:23 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-22 15:57:23 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-22 15:57:23 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-22 15:57:23 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-22 15:57:23 -Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2019-08-22 15:57:23 -Mapping filter: 'applicationContextIdFilter' to: [/*]
+2019-08-22 15:57:24 -{dataSource-1} inited
+2019-08-22 15:57:25 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5167f57d: startup date [Thu Aug 22 15:57:18 CST 2019]; root of context hierarchy
+2019-08-22 15:57:25 -Mapped "{[/personinfo/index]}" onto public java.lang.String com.center.user.controller.PersonInfoController.index()
+2019-08-22 15:57:25 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-22 15:57:25 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-22 15:57:26 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-22 15:57:26 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-22 15:57:26 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-22 15:57:27 -Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:57:27 -Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:57:27 -Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:57:27 -Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2019-08-22 15:57:27 -Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2019-08-22 15:57:27 -Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:57:27 -Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:57:27 -Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:57:27 -Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:57:27 -Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2019-08-22 15:57:27 -Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:57:27 -Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2019-08-22 15:57:27 -Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2019-08-22 15:57:27 -Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:57:27 -Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2019-08-22 15:57:27 -Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2019-08-22 15:57:27 -Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:57:27 -Registering beans for JMX exposure on startup
+2019-08-22 15:57:27 -Bean with name 'firstDataSource' has been autodetected for JMX exposure
+2019-08-22 15:57:27 -Located MBean 'firstDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=firstDataSource,type=DruidDataSource]
+2019-08-22 15:57:27 -Registering beans for JMX exposure on startup
+2019-08-22 15:57:28 -Starting beans in phase 0
+2019-08-22 15:57:28 -Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2019-08-22 15:57:28 -Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2019-08-22 15:57:28 -Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2019-08-22 15:57:28 -Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2019-08-22 15:57:28 -Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2019-08-22 15:57:28 -Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2019-08-22 15:57:28 -Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2019-08-22 15:57:28 -Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2019-08-22 15:57:28 -Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2019-08-22 15:57:28 -Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2019-08-22 15:57:28 -Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2019-08-22 15:57:28 -Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2019-08-22 15:57:28 -Starting ProtocolHandler ["http-nio-2001"]
+2019-08-22 15:57:28 -Using a shared selector for servlet write/read
+2019-08-22 15:57:28 -Tomcat started on port(s): 2001 (http)
+2019-08-22 15:57:28 -Started MallUserApplication in 11.078 seconds (JVM running for 12.041)
+2019-08-22 15:57:57 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-08-22 15:57:57 -FrameworkServlet 'dispatcherServlet': initialization started
+2019-08-22 15:57:57 -FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2019-08-22 15:59:01 -Starting MallUserApplication on DESKTOP-HMR2IQT with PID 16012 (D:\JavaInstall\IdeaProjects3\mall-center\mall-user\target\classes started by ZX-1401-0093 in D:\JavaInstall\IdeaProjects3\mall-center)
+2019-08-22 15:59:01 -No active profile set, falling back to default profiles: default
+2019-08-22 15:59:01 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5167f57d: startup date [Thu Aug 22 15:59:01 CST 2019]; root of context hierarchy
+2019-08-22 15:59:02 -HV000001: Hibernate Validator 5.3.6.Final
+2019-08-22 15:59:04 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-08-22 15:59:05 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bd2feb67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 15:59:06 -Tomcat initialized with port(s): 2001 (http)
+2019-08-22 15:59:06 -Initializing ProtocolHandler ["http-nio-2001"]
+2019-08-22 15:59:06 -Starting service [Tomcat]
+2019-08-22 15:59:06 -Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-08-22 15:59:06 -Initializing Spring embedded WebApplicationContext
+2019-08-22 15:59:06 -Root WebApplicationContext: initialization completed in 5216 ms
+2019-08-22 15:59:07 -Mapping servlet: 'dispatcherServlet' to [/]
+2019-08-22 15:59:07 -Mapping filter: 'metricsFilter' to: [/*]
+2019-08-22 15:59:07 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-22 15:59:07 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-22 15:59:07 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-22 15:59:07 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-22 15:59:07 -Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2019-08-22 15:59:07 -Mapping filter: 'applicationContextIdFilter' to: [/*]
+2019-08-22 15:59:08 -{dataSource-1} inited
+2019-08-22 15:59:09 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5167f57d: startup date [Thu Aug 22 15:59:01 CST 2019]; root of context hierarchy
+2019-08-22 15:59:09 -Mapped "{[/personinfo/index],methods=[GET]}" onto public java.lang.String com.center.user.controller.PersonInfoController.index()
+2019-08-22 15:59:09 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-22 15:59:09 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-22 15:59:10 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-22 15:59:10 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-22 15:59:10 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-22 15:59:10 -Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:59:11 -Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2019-08-22 15:59:11 -Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2019-08-22 15:59:11 -Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:59:11 -Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:59:11 -Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:59:11 -Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2019-08-22 15:59:11 -Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:59:11 -Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:59:11 -Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:59:11 -Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:59:11 -Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2019-08-22 15:59:11 -Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2019-08-22 15:59:11 -Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:59:11 -Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2019-08-22 15:59:11 -Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2019-08-22 15:59:11 -Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-08-22 15:59:11 -Registering beans for JMX exposure on startup
+2019-08-22 15:59:11 -Bean with name 'firstDataSource' has been autodetected for JMX exposure
+2019-08-22 15:59:11 -Located MBean 'firstDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=firstDataSource,type=DruidDataSource]
+2019-08-22 15:59:11 -Registering beans for JMX exposure on startup
+2019-08-22 15:59:11 -Starting beans in phase 0
+2019-08-22 15:59:11 -Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2019-08-22 15:59:11 -Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2019-08-22 15:59:11 -Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2019-08-22 15:59:11 -Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2019-08-22 15:59:11 -Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2019-08-22 15:59:11 -Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2019-08-22 15:59:11 -Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2019-08-22 15:59:11 -Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2019-08-22 15:59:11 -Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2019-08-22 15:59:11 -Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2019-08-22 15:59:11 -Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2019-08-22 15:59:11 -Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2019-08-22 15:59:11 -Starting ProtocolHandler ["http-nio-2001"]
+2019-08-22 15:59:11 -Using a shared selector for servlet write/read
+2019-08-22 15:59:11 -Tomcat started on port(s): 2001 (http)
+2019-08-22 15:59:11 -Started MallUserApplication in 11.554 seconds (JVM running for 12.571)
+2019-08-22 15:59:17 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-08-22 15:59:17 -FrameworkServlet 'dispatcherServlet': initialization started
+2019-08-22 15:59:18 -FrameworkServlet 'dispatcherServlet': initialization completed in 34 ms

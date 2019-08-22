@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.center.user.dao.mapper.PersonInfoMapper">
+
+	<resultMap id="BaseResultMap" type="com.center.user.dao.entity.PersonInfo">
+		<id column="id" property="id" />
+		<result column="order_id" property="orderId" />
+		<result column="policy_id" property="policyId" />
+		<result column="insured_id" property="insuredId" />
+		<result column="policy_no" property="policyNo" />
+		<result column="name" property="name" />
+		<result column="email" property="email" />
+		<result column="card_type" property="cardType" />
+		<result column="card_no" property="cardNo" />
+		<result column="birthday" property="birthday" />
+		<result column="mobile" property="mobile" />
+		<result column="address" property="address" />
+		<result column="zip_code" property="zipCode" />
+		<result column="sex" property="sex" />
+		<result column="person_type" property="personType" />
+		<result column="relation_ship" property="relationShip" />
+		<result column="validity" property="validity" />
+		<result column="benefit_mark" property="benefitMark" />
+		<result column="benifit_type" property="benifitType" />
+		<result column="benifit_rate" property="benifitRate" />
+		<result column="benifit_sort" property="benifitSort" />
+		<result column="contacts_name" property="contactsName" />
+		<result column="contacts_card_type" property="contactsCardType" />
+		<result column="contacts_card_no" property="contactsCardNo" />
+		<result column="social_security" property="socialSecurity" />
+		<result column="industry" property="industry" />
+		<result column="del_flag" property="delFlag" />
+		<result column="create_date" property="createDate" />
+		<result column="oper_date" property="operDate" />
+		<result column="height" property="height" />
+		<result column="weight" property="weight" />
+		<result column="industry_type" property="industryType" />
+		<result column="industry_classification" property="industryClassification" />
+		<result column="area_code" property="areaCode" />
+		<result column="insured_num" property="insuredNum" />
+	</resultMap>
+
+    <!-- 通用查询结果列-->
+    <sql id="Base_Column_List">
+        id, order_id AS orderId, policy_id AS policyId, insured_id AS insuredId, policy_no AS policyNo, name, email, card_type AS cardType, card_no AS cardNo, birthday, mobile, address, zip_code AS zipCode, sex, person_type AS personType, relation_ship AS relationShip, validity, benefit_mark AS benefitMark, benifit_type AS benifitType, benifit_rate AS benifitRate, benifit_sort AS benifitSort, contacts_name AS contactsName, contacts_card_type AS contactsCardType, contacts_card_no AS contactsCardNo, social_security AS socialSecurity, industry, del_flag AS delFlag, create_date AS createDate, oper_date AS operDate, height, weight, industry_type AS industryType, industry_classification AS industryClassification, area_code AS areaCode, insured_num AS insuredNum
+    </sql>
+</mapper>

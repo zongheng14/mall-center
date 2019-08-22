@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>mall-center</artifactId>
+        <groupId>com.center.mall</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>generate-tools</artifactId>
+
+    <properties>
+        <mysql-connector>5.1.39</mysql-connector>
+        <mybatisplus-spring-boot-starter.version>1.0.1</mybatisplus-spring-boot-starter.version>
+        <mybatisplus-maven-plugin.version>1.0</mybatisplus-maven-plugin.version>
+        <springboot-druid.version>1.1.0</springboot-druid.version>
+    </properties>
+
+    <dependencies>
+
+        <!--&lt;!&ndash; spring boot begin &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-web</artifactId>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-logging</artifactId>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-data-redis</artifactId>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-test</artifactId>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-actuator</artifactId>-->
+        <!--</dependency>-->
+        <!--&lt;!&ndash; spring boot end &ndash;&gt;-->
+
+
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>2.5.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus</artifactId>
+            <version>2.1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mybatis.caches</groupId>
+            <artifactId>mybatis-ehcache</artifactId>
+            <version>1.1.0</version>
+        </dependency>
+
+        <!--springboot集成mybatisplus-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatisplus-spring-boot-starter</artifactId>
+            <version>${mybatisplus-spring-boot-starter.version}</version>
+        </dependency>
+        <!-- MySQL 连接驱动依赖 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql-connector}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>${springboot-druid.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-test</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.12</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>${project.artifactId}-${project.version}</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <!--自动生成实体类，mapper、service、controller插件-->
+            <plugin>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatisplus-maven-plugin</artifactId>
+                <version>${mybatisplus-maven-plugin.version}</version>
+                <configuration>
+                    <!-- 输出目录(默认java.io.tmpdir) -->
+                    <outputDir>E:\mybatisplus-maven-temp\outlink</outputDir>
+                    <!-- 是否覆盖同名文件(默认false) -->
+                    <fileOverride>true</fileOverride>
+                    <!-- mapper.xml 中添加二级缓存配置(默认true) 需要和缓存数据库echche配合,所以先设为false-->
+                    <enableCache>false</enableCache>
+                    <!-- 开发者名称 -->
+                    <author>human</author>
+                    <!-- 是否开启 ActiveRecord 模式(默认true) -->
+                    <activeRecord>true</activeRecord>
+                    <!-- 数据源配置，( **必配** ) -->
+                    <dataSource>
+                        <!--<driverName>com.mysql.jdbc.Driver</driverName>-->
+                        <!--6.0.2版本的driverClassName不再是原来的路径contract_test agentlib_dev（com.mysql.jdbc.Driver），改成com.mysql.cj.jdbc.Driver了-->
+                        <driverName>com.mysql.jdbc.Driver</driverName>
+                        <url>jdbc:mysql://127.0.0.1:3306/contract_test?characterEncoding=utf8&amp;allowMultiQueries=true&amp;useSSL=false&amp;serverTimezone=GMT</url>
+                        <username>root</username>
+                        <password>123456</password>
+                    </dataSource>
+                    <strategy>
+                        <!-- 字段生成策略，四种类型，从名称就能看出来含义：
+                            nochange(默认),
+                            underline_to_camel,(下划线转驼峰)
+                            remove_prefix,(去除第一个下划线的前部分，后面保持不变)
+                            remove_prefix_and_camel(去除第一个下划线的前部分，后面转驼峰) -->
+                        <naming>underline_to_camel</naming>
+                        <!-- 表前缀 貌似没用，还是全部生成-->
+                        <!--<tablePrefix>t_</tablePrefix>-->
+                        <!--Entity中的ID生成策略（默认 id_worker）-->
+                        <idGenType></idGenType>
+                        <!--自定义超类-->
+                        <!--<superServiceClass>com.baomidou.base.BaseService</superServiceClass>-->
+                        <!-- 要包含的表 与exclude 二选一配置-->
+                        <!--<include>
+                            <property>enterprisecontract</property>
+                            <property>enterpriseuser</property>
+                            <property>personalcontract</property>
+                            <property>personallevlref</property>
+                            <property>personalplainref</property>
+                            <property>personaluseraccount</property>
+                            <property>personaluserinfo</property>
+                            <property>personalbilityinfo</property>
+                            <property>p_contract</property>
+                            <property>p_contract_account_ref</property>
+                            <property>p_contract_product_ref</property>
+                            <property>p_insurancemessage</property>
+                            <property>p_product</property>
+                        </include>-->
+                        <include>
+
+                            <!--<property>kbase_clauses_info</property>-->
+                            <property>person_info</property>
+                            <!--<property>sign_organ_agent</property>-->
+                            <!--<property>sign_plan_info</property>-->
+                            <!--<property>kbase_insurance_zj</property>-->
+                            <!--<property>kbase_insurance_zj_product</property>-->
+                            <!--<property>auto_n_product_coverages</property>-->
+                            <!--<property>auto_n_vehicle_class</property>-->
+                            <!--<property>auto_n_vehicle_fuel_type</property>-->
+                            <!--<property>auto_n_vehicle_license_type</property>-->
+                            <!--<property>auto_n_vehicle_usage_nature</property>-->
+
+
+                        </include>
+                        <!-- 要排除的表 -->
+                        <!--<exclude>-->
+                        <!--<property>schema_version</property>-->
+                        <!--</exclude>-->
+                    </strategy>
+                    <packageInfo>
+                        <!-- 父级包名称，如果不写，下面的service等就需要写全包名(默认com.baomidou) -->
+                        <parent>com.center.user</parent>
+                        <!--service包名(默认service)-->
+                        <service>service</service>
+                        <!--serviceImpl包名(默认service.impl)-->
+                        <serviceImpl>service.impl</serviceImpl>
+                        <!--entity包名(默认entity)-->
+                        <entity>entity</entity>
+                        <!--mapper包名(默认mapper)-->
+                        <mapper>mapper</mapper>
+                        <!--xml包名(默认mapper.xml)-->
+                        <xml>resources.mapper</xml>
+                    </packageInfo>
+                    <template>
+                        <!-- 定义controller模板的路径 -->
+                        <!--<controller>/template/controller1.java.vm</controller>-->
+                    </template>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>mysql</groupId>
+                        <artifactId>mysql-connector-java</artifactId>
+                        <version>${mysql-connector}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
